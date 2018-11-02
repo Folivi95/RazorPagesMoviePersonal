@@ -12,9 +12,9 @@ namespace RazorPagesMoviePersonal.Pages.Movies
 {
     public class EditModel : PageModel
     {
-        private readonly RazorPagesMoviePersonal.Models.RazorPagesMoviePersonalContext _context;
+        private readonly RazorPagesMoviePersonalContext _context;
 
-        public EditModel(RazorPagesMoviePersonal.Models.RazorPagesMoviePersonalContext context)
+        public EditModel(RazorPagesMoviePersonalContext context)
         {
             _context = context;
         }
