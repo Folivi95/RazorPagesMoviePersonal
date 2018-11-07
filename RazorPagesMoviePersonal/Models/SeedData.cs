@@ -7,17 +7,10 @@ namespace RazorPagesMoviePersonal.Models
 {
     public static class SeedData
     {
-        public static SeedData()
-        {
-            //
-            // TODO: Add constructor logic here
-            //
-        }
-
         public static void Initialize(IServiceProvider serviceProvider)
         {
             using (var context = new RazorPagesMoviePersonalContext(
-                serviceProvider.GetRequiredServices<DbContextOptions<RazorPagesMoviePersonalContext>>()))
+                serviceProvider.GetRequiredService<DbContextOptions<RazorPagesMoviePersonalContext>>()))
             {
                 if (context.Movie.Any())
                 {
